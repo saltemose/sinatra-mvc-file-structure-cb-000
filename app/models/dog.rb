@@ -1,4 +1,5 @@
 class Dog
+  @@dogs = []
 
   attr_accessor :name, :breed, :age
 
@@ -6,7 +7,11 @@ class Dog
     @name = name
     @breed = breed
     @age = age
+    @@dogs << self
   end
 
+  def self.all
+
+  end
 
 end
